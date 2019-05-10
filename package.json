@@ -23,6 +23,7 @@
     "dev": "rescripts start",
     "build": "rescripts build",
     "postbuild": "react-snap && cp build/index.html build/404.html && cp build/index.html build/200.html ",
+    "test": "jest --passWithNoTests",
     "eject": "rescripts eject"
   },
   "eslintConfig": {
