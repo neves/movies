@@ -23,6 +23,7 @@
     "dev": "rescripts start",
     "build": "rescripts build",
     "postbuild": "react-snap && cp build/index.html build/404.html && cp build/index.html build/200.html ",
+    "test": "jest --passWithNoTests",
     "eject": "rescripts eject"
   },
   "eslintConfig": {
@@ -48,6 +49,9 @@
     "@vitordino/react-snap": "^1.24.0-alpha.0"
   },
   "reactSnap": {
-    "exclude" : ["/featured", "/*/*"]
+    "exclude": [
+      "/featured",
+      "/*/*"
+    ]
   }
 }
