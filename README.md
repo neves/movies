@@ -1,6 +1,7 @@
 # Movies <sub><sup><sub>react-app for movie related search</sub></sup></sub>
 
 [![netlify status][netlify-badge]][netlify-url]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fneves%2Fmovies.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fneves%2Fmovies?ref=badge_shield)
 
 [![project thumbnail](./public/og-image.png)](https://movies.vitordino.com) [![Greenkeeper badge](https://badges.greenkeeper.io/neves/movies.svg)](https://greenkeeper.io/)
 
@@ -76,3 +77,7 @@ $ PORT=9000 yarn dev
 
 [netlify-badge]: https://api.netlify.com/api/v1/badges/c4262f53-9309-4a71-81e8-31f8b3d88416/deploy-status
 [netlify-url]: https://app.netlify.com/sites/vitordino-movies/deploys
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fneves%2Fmovies.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fneves%2Fmovies?ref=badge_large)
