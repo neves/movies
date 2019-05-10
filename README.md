@@ -2,7 +2,7 @@
 
 [![netlify status][netlify-badge]][netlify-url]
 
-[![project thumbnail](./public/og-image.png)](https://movies.vitordino.com)
+[![project thumbnail](./public/og-image.png)](https://movies.vitordino.com) [![Greenkeeper badge](https://badges.greenkeeper.io/neves/movies.svg)](https://greenkeeper.io/)
 
 **This repo contains all the code for the [movies.vitordino.com](https://movies.vitordino.com) app.**
 
