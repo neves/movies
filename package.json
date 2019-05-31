@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@reach/router": "^1.2.1",
-    "context-storage": "^0.0.0",
+    "context-storage": "^0.1.0",
     "griding": "^0.3.3",
     "minireset.css": "^0.0.4",
     "react": "16.8.6",
