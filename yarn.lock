@@ -4564,10 +4564,10 @@ graceful-fs@^4.1.15:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
   integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
 
-griding@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/griding/-/griding-0.3.3.tgz#4fc46e04d3ccdddd232dbbc020d8ea8abc3a31cf"
-  integrity sha512-G0fzhP4P/xxbalLtaVL8Qt+19mDK6cqZSA0LoYxLIjgXdtT8Ao6Ky+fJbZB0ApqYFwgfKf6tD15CkAX3ZgSJzw==
+griding@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/griding/-/griding-0.4.1.tgz#a7ffabf1cf57cc41c9db50bda14943af38979d91"
+  integrity sha512-lo0/39jDuphwmjbvMfkTgG9XiP4IMecXgTEzm2fYkDhjdloOeHDJ54WHqJcDAVwJiboLBBSrnmQwoDPGoH+9Xw==
   optionalDependencies:
     react "^16.8.x"
     react-dom "^16.8.x"
