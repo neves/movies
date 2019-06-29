@@ -1240,9 +1240,10 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rescripts/cli@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@rescripts/cli/-/cli-0.0.10.tgz#9887e836f43de6bbbf031de6c46fe32ab2d347ec"
+"@rescripts/cli@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@rescripts/cli/-/cli-0.0.11.tgz#e6f178643ecab0c1cee889c05c5bf080854ffcb0"
+  integrity sha512-G7LmKaP8lcts/Gd6o7SNOtHthOdtcb238cy80v+dUeTLfHPcHE8xQCcf3JG4fjGSf82VlZLtApFTBQLq4qF+5w==
   dependencies:
     "@rescripts/utilities" "^0.0.5"
     ramda "^0.26.0"
