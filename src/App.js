@@ -3,10 +3,10 @@ import { Router } from '@reach/router'
 import Navbar from 'components/Navbar'
 import Footer from 'components/Footer'
 import Loader from 'components/Loader'
-const SearchView = lazy(() => import('components/SearchView'))
-const FavoritesView = lazy(() => import('components/FavoritesView'))
-const DetailView = lazy(() => import('components/DetailView'))
-const AboutPage = lazy(() => import('components/AboutPage'))
+const Search = lazy(() => import('pages/Search'))
+const Favorites = lazy(() => import('pages/Favorites'))
+const Details = lazy(() => import('pages/Details'))
+const About = lazy(() => import('pages/About'))
 
 const App = () => (
 	<Fragment>
@@ -14,12 +14,12 @@ const App = () => (
 		<div style={{flex: 1}}>
 			<Suspense fallback={<Loader/>}>
 				<Router>
-					<SearchView path='/'/>
-					<SearchView isSearchable={false} path='/featured' kindURL='featured'/>
-					<FavoritesView path='/favorites'/>
-					<AboutPage path='/about'/>
-					<SearchView path=':kindURL'/>
-					<DetailView path=':kindURL/:id'/>
+					<Search path='/'/>
+					<Search isSearchable={false} path='/featured' kindURL='featured'/>
+					<Favorites path='/favorites'/>
+					<About path='/about'/>
+					<Search path=':kindURL'/>
+					<Details path=':kindURL/:id'/>
 				</Router>
 			</Suspense>
 		</div>

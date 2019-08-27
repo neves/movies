@@ -1,23 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-import Container from 'components/Container'
-import Text from 'components/Text'
-
-const Wrapper = styled(Container)`
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 4rem auto;
-	text-align: center;
-	svg{color: ${p => p.theme.colors.grey}}
-`
-
-const Emoji = styled.div`
-	font-size: 3rem;
-	margin: 0.5em;
-`
+import Text from 'assets/components/Text'
+import { Wrapper, Emoji } from 'assets/components/InfoScreen'
 
 const InfoScreen = ({emoji, title, description, ...props}) => (
 	<Wrapper {...props}>
