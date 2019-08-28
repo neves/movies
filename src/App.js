@@ -2,7 +2,7 @@ import React, { Fragment, lazy, Suspense } from 'react'
 import { Router } from '@reach/router'
 import Navbar from 'components/Navbar'
 import Footer from 'components/Footer'
-import Loader from 'components/Loader'
+import Loader from 'assets/icons/Loader'
 const Search = lazy(() => import('pages/Search'))
 const Favorites = lazy(() => import('pages/Favorites'))
 const Details = lazy(() => import('pages/Details'))
@@ -26,6 +26,5 @@ const App = () => (
 		<Footer/>
 	</Fragment>
 )
-
 
 export default App

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {fill} from 'assets/components/GlobalStyle'
+import { fill } from 'assets/components/GlobalStyle'
 
 const Wrapper = styled.div`
 	overflow: hidden;

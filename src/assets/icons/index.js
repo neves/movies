@@ -8,6 +8,7 @@ import TV from './TV'
 import Fire from './Fire'
 import HeartBreak from './HeartBreak'
 import Github from './Github'
+import Loupe from './Loupe'
 
 export {
   Heart,
@@ -20,4 +21,5 @@ export {
   Fire,
   HeartBreak,
   Github,
+  Loupe
 }
