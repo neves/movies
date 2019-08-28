@@ -4,10 +4,8 @@ import { Wrapper, Input } from 'assets/components/Searchbar'
 import { Loupe } from 'assets/icons'
 
 const getPlaceholder = kindURL => {
-	if(kindURL === 'movies') return 'movies'
-	if(kindURL === 'tv') return 'tv'
-	if(kindURL === 'people') return 'people'
-	return 'movies, tv or people'
+	const placeholder = kindURL === "multi" ? 'movies, tv or people' : kindURL
+	return placeholder
 }
 
 const Searchbar = ({kindURL, value, onChange, ...props}) => (

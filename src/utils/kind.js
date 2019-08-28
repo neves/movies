@@ -1,15 +1,37 @@
-export const getTitleFromURL = kind => {
-	if(kind === 'multi') return 'Home'
-	if(kind === 'movies') return 'Movies'
-	if(kind === 'tv') return 'TV'
-	if(kind === 'people') return 'People'
-	if(kind === 'featured') return 'Featured'
-	return 'Error'
+const urlObjects = [{
+		url: 'multi', 
+		title: 'Home'
+	}, 
+	{
+		url: 'movies', 
+		title: 'Movies',
+		kind: 'movie'
+	}, 
+	{
+		url: 'tv', 
+		title: 'TV',
+		kind: 'tv'
+	}, 
+	{
+		url: 'people', 
+		title: 'People',
+		kind: 'person'
+	}, 
+	{
+		url: 'featured', 
+		title: 'featured'
+	}]
+
+export const getTitleFromURL = url => {
+	const title = findUrlObject(url)?.title || 'Error'
+	return title
 }
 
-export const getKindByURL = input => {
-	if(input === 'movies') return 'movie'
-	if(input === 'people') return 'person'
-	if(input === 'tv') return 'tv'
-	return 'multi'
+export const getKindFromURL = url => {
+	const kind = findUrlObject(url)?.kind || 'multi'
+	return kind
+}
+
+function findUrlObject(url) {
+	return urlObjects.find(item => item.url === url)
 }

@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react'
 import { useFetch } from 'react-hooks-fetch'
 import { useInView } from 'react-intersection-observer'
 import { Cell } from 'griding'
-import { getKindByURL } from 'utils/kind'
+import { getKindFromURL } from 'utils/kind'
 import Card from 'components/Card'
 import InfoScreen from 'components/InfoScreen'
 
@@ -15,7 +15,7 @@ const getDataURL = (kindURL, search, page) => {
 		`&page=${page}`
 	])
 	return ([
-		`${base}/search/${getKindByURL(kindURL)}`,
+		`${base}/search/${getKindFromURL(kindURL)}`,
 		`?api_key=${api}`,
 		`&query=${search}`,
 		`&page=${page}`,

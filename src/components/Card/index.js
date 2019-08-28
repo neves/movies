@@ -18,6 +18,7 @@ import {
 	Info, 
 	Kind
 } from 'assets/components/Card'
+import { getKindFromURL } from 'utils/kind'
 
 const FavoriteButton = ({kindURL, id}) => {
 	const [isFavorite, {toggle}] = useFavoriteState(kindURL+'/'+id)
@@ -29,15 +30,9 @@ const FavoriteButton = ({kindURL, id}) => {
 	)
 }
 
-const getKindURL = input => {
-	if(input === 'movie') return 'movies'
-	if(input === 'person') return 'people'
-	return input
-}
-
 const Card = ({id, loading, error, loadMore, ...props}) => {
 	const kind = props?.media_type
-	const kindURL = getKindURL(props?.media_type) || props.kindURL
+	const kindURL = getKindFromURL(props?.media_type) || props.kindURL
 	const title = props?.title || props?.name
 	const image = props?.poster_path || props?.profile_path
 	const year = (props?.release_date || props?.first_air_date || props?.birthday)?.split('-')[0]

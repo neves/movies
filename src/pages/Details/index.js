@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useFetch } from 'react-hooks-fetch'
 import { Row, Cell } from 'griding'
-import { getTitleFromURL, getKindByURL } from 'utils/kind'
+import { getTitleFromURL, getKindFromURL } from 'utils/kind'
 import Container from 'assets/components/Container'
 import Loader from 'assets/icons/Loader'
 import { Arrow, IMDB } from 'assets/icons'
@@ -17,7 +17,7 @@ import { Wrapper, BackLink } from 'assets/pages/Details'
 const getDetailTitle = (kindURL, title) => `${getTitleFromURL(kindURL)} ${title ? ` ⠿ ${title}` : ''}`
 
 const Details = ({id, kindURL, ...props}) => {
-	const kind = getKindByURL(kindURL)
+	const kind = getKindFromURL(kindURL)
 	const { error, loading, data } = useFetch([
 		`https://api.themoviedb.org/3/${kind}/${id}`,
 		`?api_key=${process.env.REACT_APP_TMDB_KEY}`,
