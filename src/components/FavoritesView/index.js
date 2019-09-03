@@ -17,6 +17,42 @@ const Wrapper = styled.div`
 
 const getTitle = length => `${!length ? 'no favorites' : `${length} ${length > 1 ? `favorites`: `favorite`}`}`
 
+const NoFavorites = ({length}) => {
+	if (!length) {
+		return (
+			<InfoScreen
+				emoji={<HeartBreak size={96} style={{margin: '1rem'}}/>}
+				title='You still have no favorites'
+				description='you can add movies to your favorites clicking on the ♥ icon'
+			/>
+		)
+	}
+
+	return null;
+}
+
+const HasFavorites = ({favorites}) => {
+	if (favorites.length) {
+		return (
+			<Fragment>
+				<Text weight={600} xs={2} sm={3} md={4} xg={5}>{getTitle(favorites.length)}</Text>
+				<Row vertical-gutter style={{marginTop: '2rem', marginBottom: '2rem'}}>
+					{favorites.map(favorite => (
+						<Cell key={favorite} xs={6} sm={4} md={3} xg={2}>
+							<FetchCard
+								kindURL={favorite?.split('/')[0]}
+								id={favorite?.split('/')[1]}
+							/>
+						</Cell>
+					))}
+				</Row>
+			</Fragment>
+		)
+	}
+
+	return null;
+}
+
 const SearchView = () => {
 	const [favoritesSet] = useFavorites()
 	const favorites = [...favoritesSet] || []
@@ -25,27 +61,8 @@ const SearchView = () => {
 	return(
 		<Wrapper>
 			<Container>
-				{!favorites.length ? (
-					<InfoScreen
-						emoji={<HeartBreak size={96} style={{margin: '1rem'}}/>}
-						title='You still have no favorites'
-						description='you can add movies to your favorites clicking on the ♥ icon'
-					/>
-				) : (
-					<Fragment>
-						<Text weight={600} xs={2} sm={3} md={4} xg={5}>{getTitle(favorites.length)}</Text>
-						<Row vertical-gutter style={{marginTop: '2rem', marginBottom: '2rem'}}>
-							{favorites.map(favorite => (
-								<Cell key={favorite} xs={6} sm={4} md={3} xg={2}>
-									<FetchCard
-										kindURL={favorite?.split('/')[0]}
-										id={favorite?.split('/')[1]}
-									/>
-								</Cell>
-							))}
-						</Row>
-					</Fragment>
-				)}
+				<HasFavorites favorites={favorites}></HasFavorites>
+				<NoFavorites length={favorites.length}></NoFavorites>
 			</Container>
 		</Wrapper>
 	)
