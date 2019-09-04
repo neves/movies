@@ -22,8 +22,8 @@ const SearchView = () => {
 	return(
 		<Wrapper>
 			<Container>
-				<HasFavorites favorites={favorites}></HasFavorites>
-				<NoFavorites length={favorites.length}></NoFavorites>
+				<HasFavorites favorites={favorites}/>
+				<NoFavorites favorites={favorites}/>
 			</Container>
 		</Wrapper>
 	)

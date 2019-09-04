@@ -2,8 +2,8 @@ import React from 'react'
 import InfoScreen from 'components/InfoScreen'
 import { HeartBreak } from 'components/Icon'
 
-const NoFavorites = ({length}) => {
-	if (!length) {
+const NoFavorites = ({favorites}) => {
+	if (!favorites.length) {
 		return (
 			<InfoScreen
 				emoji={<HeartBreak size={96} style={{margin: '1rem'}}/>}
