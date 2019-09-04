@@ -12,12 +12,12 @@ const Wrapper = styled.div`
 	transition: 0.2s all;
 `
 
-const getTitle = length => `${!length ? 'no favorites' : `${length} ${length > 1 ? `favorites`: `favorite`}`}`
-
 const SearchView = () => {
 	const [favoritesSet] = useFavorites()
 	const favorites = [...favoritesSet] || []
-	useEffect(() => {document.title = 'Movies ⠿ ' + getTitle(favorites.length)}, [favorites.length])
+	const title = `Movies ⠿ ${!favorites.length ?
+		'no favorites' : `${favorites.length} ${favorites.length > 1 ? `favorites`: `favorite`}`}`
+	useEffect(() => {document.title = title}, [title])
 
 	return(
 		<Wrapper>
