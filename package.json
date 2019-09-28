@@ -9,7 +9,7 @@
     "context-storage": "^0.0.0",
     "griding": "^0.3.3",
     "minireset.css": "^0.0.4",
-    "react": "16.8.6",
+    "react": "16.10.1",
     "react-dom": "16.8.6",
     "react-hooks-fetch": "^0.10.0",
     "react-intersection-observer": "^8.0.5",
