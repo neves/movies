@@ -8089,10 +8089,10 @@ react-error-overlay@^5.1.6:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.6.tgz#0cd73407c5d141f9638ae1e0c63e7b2bf7e9929d"
   integrity sha512-X1Y+0jR47ImDVr54Ab6V9eGk0Hnu7fVWGeHQSOXHf/C2pF9c6uy3gef8QUeuUiWlNb0i08InPSE5a/KJzNzw1Q==
 
-react-hooks-fetch@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/react-hooks-fetch/-/react-hooks-fetch-0.10.0.tgz#d61279477465aa03db174f364ae09eaa511d9033"
-  integrity sha512-sslDjz6tTUZZ5i1QlQu0yTTlQNIfb8RCnK+hE6DUks1AuXKD9ZNNCorZ5LFRLKyKFxOqn/K26/8A3raSlq9r9Q==
+react-hooks-fetch@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/react-hooks-fetch/-/react-hooks-fetch-0.14.0.tgz#ef048ec5ee96ea69eda76d404e2e44a2459a2699"
+  integrity sha512-kxSfbl8azQsbhI3tzjTkJvOoGFLf/FKPzeLOn/ePugF9xCVLSvF6qiOOKa0O6+xt1nIWrVl5doBOHStR6xfG8Q==
 
 react-intersection-observer@^8.0.5:
   version "8.0.5"
