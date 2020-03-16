@@ -1240,11 +1240,12 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rescripts/cli@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@rescripts/cli/-/cli-0.0.10.tgz#9887e836f43de6bbbf031de6c46fe32ab2d347ec"
+"@rescripts/cli@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@rescripts/cli/-/cli-0.0.14.tgz#1ec700148e754337bff1cedaefd757e016664978"
+  integrity sha512-BPDm8xwYFdzOe8uardwbybrlFu9C6f9463CHPs1M1gtWK+gyXxfWxsYuNMxWlxAnogRHpqLYSYFHGphx2ocGEg==
   dependencies:
-    "@rescripts/utilities" "^0.0.5"
+    "@rescripts/utilities" "^0.0.7"
     ramda "^0.26.0"
     react-dev-utils "^7.0.0"
 
@@ -1284,6 +1285,13 @@
 "@rescripts/utilities@^0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@rescripts/utilities/-/utilities-0.0.5.tgz#1bc296744044e4c6ea5d137f073f72b4892a357a"
+  dependencies:
+    ramda "^0.26.0"
+
+"@rescripts/utilities@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@rescripts/utilities/-/utilities-0.0.7.tgz#fac07a981fcc9674c9b55cedb9da67f03dadda52"
+  integrity sha512-kdk4qvNYXOH7mVJCP/URokp5J+1HCR+tT1Zgtp8X9hLywn6WoKlU/tQ2ECB/NPOHrZjp/DGXWeQBAchLXV8q2w==
   dependencies:
     ramda "^0.26.0"
 
