@@ -5062,7 +5062,7 @@ internal-ip@^4.2.0:
     default-gateway "^4.2.0"
     ipaddr.js "^1.9.0"
 
-invariant@^2.0.0, invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
+invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -8094,12 +8094,12 @@ react-hooks-fetch@^0.10.0:
   resolved "https://registry.yarnpkg.com/react-hooks-fetch/-/react-hooks-fetch-0.10.0.tgz#d61279477465aa03db174f364ae09eaa511d9033"
   integrity sha512-sslDjz6tTUZZ5i1QlQu0yTTlQNIfb8RCnK+hE6DUks1AuXKD9ZNNCorZ5LFRLKyKFxOqn/K26/8A3raSlq9r9Q==
 
-react-intersection-observer@^8.0.5:
-  version "8.0.5"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.0.5.tgz#e6d73c890c6e201178c7216d9af5bccd9e5c68f5"
+react-intersection-observer@^8.26.2:
+  version "8.26.2"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.26.2.tgz#0562ff0c06b2b10e809190c2fa9b6ded656e6e16"
+  integrity sha512-GmSjLNK+oV7kS+BHfrJSaA4wF61ELA33gizKHmN+tk59UT6/aW8kkqvlrFGPwxGoaIzLKS2evfG5fgkw5MIIsg==
   dependencies:
-    "@babel/runtime" "^7.0.0"
-    invariant "^2.0.0"
+    tiny-invariant "^1.1.0"
 
 react-is@^16.6.0:
   version "16.7.0"
@@ -9397,6 +9397,11 @@ timsort@^0.3.0:
 tiny-emitter@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
+
+tiny-invariant@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.1.0.tgz#634c5f8efdc27714b7f386c35e6760991d230875"
+  integrity sha512-ytxQvrb1cPc9WBEI/HSeYYoGD0kWnGEOR8RY6KomWLBVhqz0RgTwVO9dLrGz7dC+nN9llyI7OKAgRq8Vq4ZBSw==
 
 tmp@^0.0.33:
   version "0.0.33"
