@@ -9239,9 +9239,14 @@ stylis-rule-sheet@^0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/stylis-rule-sheet/-/stylis-rule-sheet-0.0.10.tgz#44e64a2b076643f4b52e5ff71efc04d8c3c4a430"
 
-stylis@^3.5.0, stylis@^3.5.4:
+stylis@^3.5.0:
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.5.4.tgz#f665f25f5e299cf3d64654ab949a57c768b73fbe"
+
+stylis@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/stylis/-/stylis-4.0.1.tgz#c2c586b630dbf5db48ed3aeb5469a10473c99007"
+  integrity sha512-Q6D+uXxhrf5MfJHUmS58U2mmvflwqYOeg5PXYIIFFlCfuA/Wl/0ej2G0ObT9K3WDGKAYBkqKonmyFSxkoMdHPw==
 
 supports-color@^2.0.0:
   version "2.0.0"
